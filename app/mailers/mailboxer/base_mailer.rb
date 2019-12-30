@@ -1,4 +1,4 @@
-class Mailboxer::BaseMailer < ActionMailer::Base
+class Mailboxer::BaseMailer < Mailboxer.parent_mailer.constantize
   default :from => Mailboxer.default_from
 
   private
@@ -10,5 +10,4 @@ class Mailboxer::BaseMailer < ActionMailer::Base
   def strip_tags(text)
     ::Mailboxer::Cleaner.instance.strip_tags(text)
   end
-
 end
