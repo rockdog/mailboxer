@@ -1,4 +1,4 @@
-class Mailboxer::BaseMailer < Mailboxer.parent_mailer.constanize
+class Mailboxer::BaseMailer < Mailboxer.parent_mailer.constantize
   default :from => Mailboxer.default_from
 
   private
