@@ -1,6 +1,6 @@
 Mailboxer.setup do |config|
   #Configures the parent mailer Mailboxer::BaseMailer inherits from
-  config.parent_mailer = 'ApplicationMailer'
+  config.parent_mailer = 'ActionMailer::Base'
 
   #Configures if your application uses or not email sending for Notifications and Messages
   config.uses_emails = true

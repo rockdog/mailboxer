@@ -6,7 +6,7 @@ module Mailboxer
   mattr_accessor :default_from
   @@default_from = "no-reply@mailboxer.com"
   mattr_accessor :parent_mailer
-  @@parent_mailer = "ApplicationMailer"
+  @@parent_mailer = "ActionMailer::Base"
   mattr_accessor :uses_emails
   @@uses_emails = true
   mattr_accessor :search_enabled
